@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos no site</title>
+</head>
+<body>
+    <h1>Inserindo Vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <!--Em vídeo também temos compatibilidade em alguns navegadores, nem todos reconhecem os mesmos formatos, com isso, é importante termos alguns formatos de vídeos disponíveis para estar colocando no site para reproduzir caso o navegador não seja compatível com algum, são eles: MP4, M4V, OGV e WEBm-->
+    <video preload="metadata" width="560" poster="imagens/capa-do-video.jpeg" controls autoplay loop>
+        <source src="midia/video1.mp4" type="video/mp4">
+        <source src="midia/video1.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos. <a href="midia/video1.mp4">Baixe seu video aqui</a></p>
+        <!--Este tipo de tags, são para hospedar videos localmente, ou seja, se uma quantidade de gente acessar o site, vai multiplicar pelo tamanho do video, e a hospedagem pode acabar ficando cara para o cliente, o ideal não seria hospedar videos localmente, o ideal é ter o consumo de banda minimo para o seu site, para ele não ficar pesado demais e o cliente não pagar caro pela hospedagem (consumo de banda)-->
+    </video>
+    <h1>Inserindo Vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=BTvqP05RTq5FmMUa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

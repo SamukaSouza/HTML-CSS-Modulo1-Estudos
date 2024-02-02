@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Imagem</title>
+</head>
+<body>
+    <h1>Exercicio com Imagens</h1>
+    <p>Neste exercicio estarei colocando algumas imagens, mais precisamente 4 imagens, para adaptar o seu tamanho na página utilizando códio HTML5</p>
+    <picture>
+        <source media="(max-width: 400px)" srcset="imagem-mp.jpeg" type="image/jpeg">
+        <source media="(max-width: 760px)" srcset="imagem-p.jpeg" type="image/jpeg">
+        <source media="(max-width: 1800px)" srcset="imagem-m.jpeg" type="image/jpeg">
+        <img src="imagem-g.jpeg" alt="Imagem Dinâmica">
+    </picture>
+    <h1>Musicas que eu Gosto</h1>
+    <p>Minhas músicas favoritas</p>
+    <ul>
+        <li><audio preload="metadata" controls autoplay loop>
+            <source src="midia/better-day-186374.mp3" type="audio/mpeg">
+        </audio></li>
+        <br>
+        <li><audio src="midia/sad-soul-chasing-a-feeling-185750.mp3" controls autoplay loop></audio></li>
+    </ul>
+</body>
+</html>

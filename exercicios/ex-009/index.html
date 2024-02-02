@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>LINKS</h1>
+    <h2>Usando Links Externos</h2>
+    <p>Você pode acessar o meu <a href="https://github.com/SamukaSouza" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <p>Você também pode <a href="https://instagram.com/samukasaiol" target="_blank" rel="external">acessar o meu Instagram</a></p>
+    <!-- a função target="_blank", ela é utilizada para quando a pessoa clicar no hyperlink, não atualizar a própria página e sair do site, e sim abrir uma outra aba na guia do navegador, assim a pessoa não sai do site principal. já o rel="external" seria algo mais para indicar que o link é externo para questões de SEO do buscador do google-->
+    <h2>Usando Links Internos</h2>
+    <p>Esta é a primeira página do site, se você quiser, pode acessar a minha <a href="page002.html" rel="next">Segunda página</a></p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">Terceira Página</a></p>
+    <h2>Links para downloads</h2>
+    <ul>
+        <li><a href="livro/Livro.pdf" download="Livro.pdf" type="application/pdf">Baixar o Livro em PDF</a></li>
+        <li><a href="livro/Livro.rar" download="livro.rar" type="application/rar">Baixar link compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>
