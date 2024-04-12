@@ -12,23 +12,46 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
             padding: 10px;
             text-align: center;
         }
-        thead {
-            background-color: rgba(128, 128, 128, 0.445);
+        thead, tfoot {
+            background-color: rgb(128, 128, 128);
             color: white;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: rgb(128, 128, 128);
+        }
+
+        /*Nessa pseudoclasse nth-child - Pode-se colocar também "odd" - ímpar ou "even" - Par*/
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+    
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!--
         ANATOMIA PARA TABELAS GRANDES
+        TABLE
+        CAPTION
         THEAD
             TR, TD, TH
         TBODY
@@ -37,12 +60,13 @@
             TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>
+                <th scope="col">
                     Estado
                 </th>
-                <th>População</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -64,7 +88,7 @@
             </tr>
             <tr>
                 <td>Bahia</td>
-                <td>14 873 064</td>
+                <td class="num">14 873 064</td>
             </tr>
             <tr>
                 <td>Parana</td>
@@ -72,19 +96,19 @@
             </tr>
             <tr>
                 <td>Rio Grande do Sul</td>
-                <td>11 377 239</td>
+                <td class="num">11 377 239</td>
             </tr>
             <tr>
                 <td>Pernambuco</td>
-                <td>9 557 071</td>
+                <td class="num">9 557 071</td>
             </tr>
             <tr>
                 <td>Ceará</td>
-                <td>9 132 078</td>
+                <td class="num">9 132 078</td>
             </tr>
             <tr>
                 <td>Pará</td>
-                <td>8 502 865</td>
+                <td class="num">8 502 865</td>
             </tr>
             <tr>
                 <td>Santa Catarina</td>
@@ -101,7 +125,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitante</th>
+                <th scope="row">Total de Habitante</th>
                 <td><strong>00000</strong></td>
             </tr>
         </tfoot>
